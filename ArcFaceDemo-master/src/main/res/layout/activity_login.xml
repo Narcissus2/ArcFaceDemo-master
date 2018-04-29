@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="256dp"
+        android:text="用户名" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="27dp"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="abc" />
+
+    <EditText
+        android:id="@+id/et-password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/et_user"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="123" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:text="请根据物业资料填写信息"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et-password"
+        android:layout_below="@+id/cb_remember"
+        android:layout_marginTop="14dp"
+        android:onClick="login"
+        android:text="登录" />
+
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et-password"
+        android:layout_below="@+id/et-password"
+        android:layout_marginTop="14dp"
+        android:text="保存用户名和密码" />
+
+</RelativeLayout>
